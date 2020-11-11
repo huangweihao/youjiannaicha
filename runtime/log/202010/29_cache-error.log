@@ -1,0 +1,2 @@
+[2020-10-29T13:13:59+08:00][cache-error] [getRedisIns]{"来自":"redis-user","错误":"Redis::connect(): connect() failed: Connection refused"}
+[2020-10-29T13:15:01+08:00][cache-error] [getRedisIns]{"来自":"redis-user","错误":"Redis::connect(): connect() failed: Connection refused"}

@@ -1,0 +1,396 @@
+[2020-10-29T10:51:04+08:00][sql] CONNECT:[ UseTime:0.000683s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:51:04+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager` [ RunTime:0.000900s ]
+[2020-10-29T10:51:04+08:00][sql] SELECT `id`,`status` FROM `sj_manager` WHERE  `token` = 'de6e3d0de15ed0bcc49753d21e3f94bd' LIMIT 1 [ RunTime:0.000587s ]
+[2020-10-29T10:51:07+08:00][sql] CONNECT:[ UseTime:0.000429s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:51:07+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.000657s ]
+[2020-10-29T10:51:07+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_manager_login_log` WHERE  `manager_id` = 1 [ RunTime:0.000363s ]
+[2020-10-29T10:51:07+08:00][sql] SELECT `manager_id`,`ip`,`ctime` FROM `sj_manager_login_log` WHERE  `manager_id` = 1 ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000369s ]
+[2020-10-29T10:51:13+08:00][sql] CONNECT:[ UseTime:0.000865s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:51:13+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager` [ RunTime:0.001039s ]
+[2020-10-29T10:51:13+08:00][sql] SELECT `id`,`role_id`,`password`,`status` FROM `sj_manager` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000246s ]
+[2020-10-29T10:51:13+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.000362s ]
+[2020-10-29T10:51:13+08:00][sql] SELECT `power`,`status` FROM `sj_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000199s ]
+[2020-10-29T10:51:13+08:00][sql] UPDATE `sj_manager`  SET `token` = '9334c38d85bf3a7304561da7819d8d71' , `last_time` = 1603939873 , `last_ip` = 2130706433  WHERE  `id` = 1 [ RunTime:0.000968s ]
+[2020-10-29T10:51:13+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.000390s ]
+[2020-10-29T10:51:13+08:00][sql] INSERT INTO `sj_manager_login_log` SET `manager_id` = 1 , `ip` = 2130706433 , `ctime` = 1603939873 [ RunTime:0.000314s ]
+[2020-10-29T10:51:15+08:00][sql] CONNECT:[ UseTime:0.000415s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:51:15+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.000640s ]
+[2020-10-29T10:51:15+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_role` [ RunTime:0.000255s ]
+[2020-10-29T10:51:15+08:00][sql] SELECT `id`,`name`,`status`,`ctime`,`utime` FROM `sj_role` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000357s ]
+[2020-10-29T10:51:29+08:00][sql] CONNECT:[ UseTime:0.000591s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:51:29+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager` [ RunTime:0.000718s ]
+[2020-10-29T10:51:29+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_manager` [ RunTime:0.000264s ]
+[2020-10-29T10:51:29+08:00][sql] SELECT `id`,`role_id`,`name`,`status`,`ctime`,`utime` FROM `sj_manager` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000206s ]
+[2020-10-29T10:51:36+08:00][sql] CONNECT:[ UseTime:0.000496s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:51:36+08:00][sql] SHOW FULL COLUMNS FROM `sj_volunteer_user` [ RunTime:0.000591s ]
+[2020-10-29T10:51:36+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_volunteer_user` WHERE  `status` >= 0 [ RunTime:0.000241s ]
+[2020-10-29T10:51:36+08:00][sql] SELECT `id`,`username`,`phone`,`age`,`experience`,`identity`,`health`,`status`,`ctime`,`utime` FROM `sj_volunteer_user` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000252s ]
+[2020-10-29T10:51:38+08:00][sql] CONNECT:[ UseTime:0.000429s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:51:38+08:00][sql] SHOW FULL COLUMNS FROM `sj_organize` [ RunTime:0.000608s ]
+[2020-10-29T10:51:38+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_organize` WHERE  `status` >= 0 [ RunTime:0.000322s ]
+[2020-10-29T10:51:38+08:00][sql] SELECT `id`,`name`,`status`,`ctime`,`utime` FROM `sj_organize` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000220s ]
+[2020-10-29T10:51:39+08:00][sql] CONNECT:[ UseTime:0.000412s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:51:39+08:00][sql] SHOW FULL COLUMNS FROM `sj_organize` [ RunTime:0.000518s ]
+[2020-10-29T10:51:39+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_organize` WHERE  `status` >= 0 [ RunTime:0.000276s ]
+[2020-10-29T10:51:39+08:00][sql] SELECT `id`,`name`,`status`,`ctime`,`utime` FROM `sj_organize` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000268s ]
+[2020-10-29T10:51:50+08:00][sql] CONNECT:[ UseTime:0.000515s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:51:50+08:00][sql] SHOW FULL COLUMNS FROM `sj_organize` [ RunTime:0.000496s ]
+[2020-10-29T10:51:50+08:00][sql] SELECT `id`,`name`,`status` FROM `sj_organize` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000298s ]
+[2020-10-29T10:53:31+08:00][sql] CONNECT:[ UseTime:0.000642s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:53:31+08:00][sql] SHOW FULL COLUMNS FROM `sj_organize` [ RunTime:0.000674s ]
+[2020-10-29T10:53:31+08:00][sql] SELECT `id`,`name`,`status` FROM `sj_organize` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000286s ]
+[2020-10-29T10:59:33+08:00][sql] CONNECT:[ UseTime:0.000951s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:59:33+08:00][sql] SHOW FULL COLUMNS FROM `sj_volunteer_user` [ RunTime:0.000782s ]
+[2020-10-29T10:59:33+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_volunteer_user` WHERE  `status` >= 0 [ RunTime:0.000368s ]
+[2020-10-29T10:59:33+08:00][sql] SELECT `id`,`username`,`phone`,`age`,`experience`,`identity`,`health`,`status`,`ctime`,`utime` FROM `sj_volunteer_user` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000307s ]
+[2020-10-29T10:59:41+08:00][sql] CONNECT:[ UseTime:0.000398s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:59:41+08:00][sql] SHOW FULL COLUMNS FROM `sj_organize` [ RunTime:0.000513s ]
+[2020-10-29T10:59:41+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_organize` WHERE  `status` >= 0 [ RunTime:0.000213s ]
+[2020-10-29T10:59:41+08:00][sql] SELECT `id`,`name`,`status`,`ctime`,`utime` FROM `sj_organize` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000172s ]
+[2020-10-29T10:59:44+08:00][sql] CONNECT:[ UseTime:0.000590s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:59:44+08:00][sql] SHOW FULL COLUMNS FROM `sj_volunteer_user` [ RunTime:0.001086s ]
+[2020-10-29T10:59:44+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_volunteer_user` WHERE  `status` >= 0 [ RunTime:0.000348s ]
+[2020-10-29T10:59:44+08:00][sql] SELECT `id`,`username`,`phone`,`age`,`experience`,`identity`,`health`,`status`,`ctime`,`utime` FROM `sj_volunteer_user` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000421s ]
+[2020-10-29T10:59:45+08:00][sql] CONNECT:[ UseTime:0.000441s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T10:59:45+08:00][sql] SHOW FULL COLUMNS FROM `sj_organize` [ RunTime:0.001570s ]
+[2020-10-29T10:59:45+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_organize` WHERE  `status` >= 0 [ RunTime:0.000259s ]
+[2020-10-29T10:59:45+08:00][sql] SELECT `id`,`name`,`status`,`ctime`,`utime` FROM `sj_organize` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000235s ]
+[2020-10-29T11:00:04+08:00][sql] CONNECT:[ UseTime:0.000760s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:00:04+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000672s ]
+[2020-10-29T11:00:04+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000389s ]
+[2020-10-29T11:00:04+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000316s ]
+[2020-10-29T11:00:55+08:00][sql] CONNECT:[ UseTime:0.000713s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:00:55+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.000886s ]
+[2020-10-29T11:00:55+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_role` [ RunTime:0.000332s ]
+[2020-10-29T11:00:55+08:00][sql] SELECT `id`,`name`,`status`,`ctime`,`utime` FROM `sj_role` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000395s ]
+[2020-10-29T11:00:56+08:00][sql] CONNECT:[ UseTime:0.000461s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:00:56+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager` [ RunTime:0.000634s ]
+[2020-10-29T11:00:56+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_manager` [ RunTime:0.000348s ]
+[2020-10-29T11:00:56+08:00][sql] SELECT `id`,`role_id`,`name`,`status`,`ctime`,`utime` FROM `sj_manager` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000257s ]
+[2020-10-29T11:01:22+08:00][sql] CONNECT:[ UseTime:0.000669s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:01:22+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000742s ]
+[2020-10-29T11:01:22+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000302s ]
+[2020-10-29T11:01:22+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000384s ]
+[2020-10-29T11:01:35+08:00][sql] CONNECT:[ UseTime:0.000804s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:01:35+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000717s ]
+[2020-10-29T11:01:35+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000370s ]
+[2020-10-29T11:01:35+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000320s ]
+[2020-10-29T11:01:50+08:00][sql] CONNECT:[ UseTime:0.000988s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:01:50+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.000754s ]
+[2020-10-29T11:01:50+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_manager_login_log` WHERE  `manager_id` = 1 [ RunTime:0.000361s ]
+[2020-10-29T11:01:50+08:00][sql] SELECT `manager_id`,`ip`,`ctime` FROM `sj_manager_login_log` WHERE  `manager_id` = 1 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000348s ]
+[2020-10-29T11:43:41+08:00][sql] CONNECT:[ UseTime:0.000831s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:43:41+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager` [ RunTime:0.000699s ]
+[2020-10-29T11:43:41+08:00][sql] SELECT `id`,`status` FROM `sj_manager` WHERE  `token` = '9334c38d85bf3a7304561da7819d8d71' LIMIT 1 [ RunTime:0.000302s ]
+[2020-10-29T11:45:20+08:00][sql] CONNECT:[ UseTime:0.000615s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:45:20+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000570s ]
+[2020-10-29T11:45:20+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000193s ]
+[2020-10-29T11:45:20+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000207s ]
+[2020-10-29T11:45:23+08:00][sql] CONNECT:[ UseTime:0.000705s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:45:23+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.000856s ]
+[2020-10-29T11:45:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_manager_login_log` WHERE  `manager_id` = 1 [ RunTime:0.000423s ]
+[2020-10-29T11:45:23+08:00][sql] SELECT `manager_id`,`ip`,`ctime` FROM `sj_manager_login_log` WHERE  `manager_id` = 1 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000648s ]
+[2020-10-29T11:46:27+08:00][sql] CONNECT:[ UseTime:0.000520s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:46:27+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager` [ RunTime:0.000540s ]
+[2020-10-29T11:46:27+08:00][sql] SELECT `id`,`role_id`,`password`,`status` FROM `sj_manager` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000366s ]
+[2020-10-29T11:46:27+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.000525s ]
+[2020-10-29T11:46:27+08:00][sql] SELECT `power`,`status` FROM `sj_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000288s ]
+[2020-10-29T11:46:27+08:00][sql] UPDATE `sj_manager`  SET `token` = '6e0b030030bb244013b6b7619dababa1' , `last_time` = 1603943187 , `last_ip` = 2130706433  WHERE  `id` = 1 [ RunTime:0.001539s ]
+[2020-10-29T11:46:27+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.000435s ]
+[2020-10-29T11:46:27+08:00][sql] INSERT INTO `sj_manager_login_log` SET `manager_id` = 1 , `ip` = 2130706433 , `ctime` = 1603943187 [ RunTime:0.000385s ]
+[2020-10-29T11:46:30+08:00][sql] CONNECT:[ UseTime:0.000607s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:46:30+08:00][sql] SHOW FULL COLUMNS FROM `sj_train` [ RunTime:0.000699s ]
+[2020-10-29T11:46:30+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_train` [ RunTime:0.000230s ]
+[2020-10-29T11:46:30+08:00][sql] SELECT `id`,`title`,`author`,`utime`,`ctime` FROM `sj_train` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000192s ]
+[2020-10-29T11:46:31+08:00][sql] CONNECT:[ UseTime:0.000482s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:46:31+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000598s ]
+[2020-10-29T11:46:31+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000297s ]
+[2020-10-29T11:46:31+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000332s ]
+[2020-10-29T11:46:32+08:00][sql] CONNECT:[ UseTime:0.000460s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:46:32+08:00][sql] SHOW FULL COLUMNS FROM `sj_organize` [ RunTime:0.000693s ]
+[2020-10-29T11:46:32+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_organize` WHERE  `status` >= 0 [ RunTime:0.000259s ]
+[2020-10-29T11:46:32+08:00][sql] SELECT `id`,`name`,`status`,`ctime`,`utime` FROM `sj_organize` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000206s ]
+[2020-10-29T11:46:32+08:00][sql] CONNECT:[ UseTime:0.000477s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:46:32+08:00][sql] SHOW FULL COLUMNS FROM `sj_volunteer_user` [ RunTime:0.000557s ]
+[2020-10-29T11:46:32+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_volunteer_user` WHERE  `status` >= 0 [ RunTime:0.000272s ]
+[2020-10-29T11:46:32+08:00][sql] SELECT `id`,`username`,`phone`,`age`,`experience`,`identity`,`health`,`status`,`ctime`,`utime` FROM `sj_volunteer_user` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000291s ]
+[2020-10-29T11:46:36+08:00][sql] CONNECT:[ UseTime:0.000449s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T11:46:36+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000946s ]
+[2020-10-29T11:46:36+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000271s ]
+[2020-10-29T11:46:36+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000328s ]
+[2020-10-29T12:11:54+08:00][sql] CONNECT:[ UseTime:0.000653s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:11:54+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager` [ RunTime:0.000665s ]
+[2020-10-29T12:11:54+08:00][sql] SELECT `id`,`status` FROM `sj_manager` WHERE  `token` = '6e0b030030bb244013b6b7619dababa1' LIMIT 1 [ RunTime:0.000301s ]
+[2020-10-29T12:19:38+08:00][sql] CONNECT:[ UseTime:0.000799s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:19:38+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager` [ RunTime:0.001375s ]
+[2020-10-29T12:19:38+08:00][sql] SELECT `id`,`role_id`,`password`,`status` FROM `sj_manager` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000283s ]
+[2020-10-29T12:19:38+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.000416s ]
+[2020-10-29T12:19:38+08:00][sql] SELECT `power`,`status` FROM `sj_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000203s ]
+[2020-10-29T12:19:38+08:00][sql] UPDATE `sj_manager`  SET `token` = 'a6fe9cf2088172d68f0ceee959d39ebf' , `last_time` = 1603945178 , `last_ip` = 2130706433  WHERE  `id` = 1 [ RunTime:0.000760s ]
+[2020-10-29T12:19:38+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.000435s ]
+[2020-10-29T12:19:38+08:00][sql] INSERT INTO `sj_manager_login_log` SET `manager_id` = 1 , `ip` = 2130706433 , `ctime` = 1603945178 [ RunTime:0.000388s ]
+[2020-10-29T12:19:40+08:00][sql] CONNECT:[ UseTime:0.000445s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:19:40+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000571s ]
+[2020-10-29T12:19:40+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000250s ]
+[2020-10-29T12:19:40+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000258s ]
+[2020-10-29T12:19:45+08:00][sql] CONNECT:[ UseTime:0.000629s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:19:45+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.000719s ]
+[2020-10-29T12:19:45+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_manager_login_log` WHERE  `manager_id` = 1 [ RunTime:0.000338s ]
+[2020-10-29T12:19:45+08:00][sql] SELECT `manager_id`,`ip`,`ctime` FROM `sj_manager_login_log` WHERE  `manager_id` = 1 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000278s ]
+[2020-10-29T12:27:36+08:00][sql] CONNECT:[ UseTime:0.000655s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:27:36+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000885s ]
+[2020-10-29T12:27:36+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000287s ]
+[2020-10-29T12:27:36+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000308s ]
+[2020-10-29T12:27:37+08:00][sql] CONNECT:[ UseTime:0.000469s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:27:37+08:00][sql] SHOW FULL COLUMNS FROM `sj_train` [ RunTime:0.000683s ]
+[2020-10-29T12:27:37+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_train` [ RunTime:0.000241s ]
+[2020-10-29T12:27:37+08:00][sql] SELECT `id`,`title`,`author`,`utime`,`ctime` FROM `sj_train` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000242s ]
+[2020-10-29T12:29:11+08:00][sql] CONNECT:[ UseTime:0.000682s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:29:11+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000576s ]
+[2020-10-29T12:29:11+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000203s ]
+[2020-10-29T12:29:11+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000220s ]
+[2020-10-29T12:29:12+08:00][sql] CONNECT:[ UseTime:0.000709s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:29:12+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000772s ]
+[2020-10-29T12:29:12+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000380s ]
+[2020-10-29T12:29:12+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000293s ]
+[2020-10-29T12:29:12+08:00][sql] CONNECT:[ UseTime:0.000568s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:29:12+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000591s ]
+[2020-10-29T12:29:12+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000318s ]
+[2020-10-29T12:29:12+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000260s ]
+[2020-10-29T12:29:42+08:00][sql] CONNECT:[ UseTime:0.000689s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:29:42+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000730s ]
+[2020-10-29T12:29:42+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000297s ]
+[2020-10-29T12:29:42+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000279s ]
+[2020-10-29T12:29:49+08:00][sql] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:29:49+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000642s ]
+[2020-10-29T12:29:49+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000283s ]
+[2020-10-29T12:29:49+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000328s ]
+[2020-10-29T12:30:20+08:00][sql] CONNECT:[ UseTime:0.000704s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:30:20+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000908s ]
+[2020-10-29T12:30:20+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000266s ]
+[2020-10-29T12:30:20+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000265s ]
+[2020-10-29T12:30:33+08:00][sql] CONNECT:[ UseTime:0.000442s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:30:33+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager` [ RunTime:0.000511s ]
+[2020-10-29T12:30:33+08:00][sql] SELECT `id`,`role_id`,`password`,`status` FROM `sj_manager` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000286s ]
+[2020-10-29T12:30:33+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.000486s ]
+[2020-10-29T12:30:33+08:00][sql] SELECT `power`,`status` FROM `sj_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000298s ]
+[2020-10-29T12:30:33+08:00][sql] UPDATE `sj_manager`  SET `token` = '6384346f79edc66ecc3751dce8338b45' , `last_time` = 1603945833 , `last_ip` = 2130706433  WHERE  `id` = 1 [ RunTime:0.001045s ]
+[2020-10-29T12:30:33+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.001106s ]
+[2020-10-29T12:30:33+08:00][sql] INSERT INTO `sj_manager_login_log` SET `manager_id` = 1 , `ip` = 2130706433 , `ctime` = 1603945833 [ RunTime:0.000636s ]
+[2020-10-29T12:30:36+08:00][sql] CONNECT:[ UseTime:0.000444s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:30:36+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000563s ]
+[2020-10-29T12:30:36+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000216s ]
+[2020-10-29T12:30:36+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000237s ]
+[2020-10-29T12:30:46+08:00][sql] CONNECT:[ UseTime:0.000642s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:30:46+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000685s ]
+[2020-10-29T12:30:46+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000242s ]
+[2020-10-29T12:30:46+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000268s ]
+[2020-10-29T12:30:49+08:00][sql] CONNECT:[ UseTime:0.000554s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:30:49+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000722s ]
+[2020-10-29T12:30:49+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000352s ]
+[2020-10-29T12:30:49+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000251s ]
+[2020-10-29T12:31:13+08:00][sql] CONNECT:[ UseTime:0.000644s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:31:13+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000802s ]
+[2020-10-29T12:31:13+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000240s ]
+[2020-10-29T12:31:13+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000198s ]
+[2020-10-29T12:31:16+08:00][sql] CONNECT:[ UseTime:0.000389s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:31:16+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000520s ]
+[2020-10-29T12:31:16+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000201s ]
+[2020-10-29T12:31:16+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000197s ]
+[2020-10-29T12:32:19+08:00][sql] CONNECT:[ UseTime:0.000764s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:32:19+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager` [ RunTime:0.000663s ]
+[2020-10-29T12:32:19+08:00][sql] SELECT `id`,`role_id`,`password`,`status` FROM `sj_manager` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000382s ]
+[2020-10-29T12:32:19+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.000657s ]
+[2020-10-29T12:32:19+08:00][sql] SELECT `power`,`status` FROM `sj_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000265s ]
+[2020-10-29T12:32:19+08:00][sql] UPDATE `sj_manager`  SET `token` = '01ef5c13a00c84de49d977c95369ef79' , `last_time` = 1603945939 , `last_ip` = 2130706433  WHERE  `id` = 1 [ RunTime:0.000959s ]
+[2020-10-29T12:32:19+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.000911s ]
+[2020-10-29T12:32:19+08:00][sql] INSERT INTO `sj_manager_login_log` SET `manager_id` = 1 , `ip` = 2130706433 , `ctime` = 1603945939 [ RunTime:0.000379s ]
+[2020-10-29T12:32:30+08:00][sql] CONNECT:[ UseTime:0.000356s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:32:30+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager` [ RunTime:0.000445s ]
+[2020-10-29T12:32:30+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_manager` [ RunTime:0.000214s ]
+[2020-10-29T12:32:30+08:00][sql] SELECT `id`,`role_id`,`name`,`status`,`ctime`,`utime` FROM `sj_manager` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000261s ]
+[2020-10-29T12:32:31+08:00][sql] CONNECT:[ UseTime:0.000417s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:32:31+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.000412s ]
+[2020-10-29T12:32:31+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_role` [ RunTime:0.000154s ]
+[2020-10-29T12:32:31+08:00][sql] SELECT `id`,`name`,`status`,`ctime`,`utime` FROM `sj_role` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000292s ]
+[2020-10-29T12:32:32+08:00][sql] CONNECT:[ UseTime:0.000492s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:32:32+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.000480s ]
+[2020-10-29T12:32:32+08:00][sql] SELECT `id`,`name`,`power`,`status` FROM `sj_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000368s ]
+[2020-10-29T12:32:42+08:00][sql] CONNECT:[ UseTime:0.000459s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:32:42+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000628s ]
+[2020-10-29T12:32:42+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000236s ]
+[2020-10-29T12:32:42+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000257s ]
+[2020-10-29T12:33:19+08:00][sql] CONNECT:[ UseTime:0.000607s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:33:19+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000686s ]
+[2020-10-29T12:33:19+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000242s ]
+[2020-10-29T12:33:19+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000184s ]
+[2020-10-29T12:35:59+08:00][sql] CONNECT:[ UseTime:0.000620s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:35:59+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000775s ]
+[2020-10-29T12:35:59+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000255s ]
+[2020-10-29T12:35:59+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000334s ]
+[2020-10-29T12:36:28+08:00][sql] CONNECT:[ UseTime:0.000571s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:36:28+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000785s ]
+[2020-10-29T12:36:28+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000367s ]
+[2020-10-29T12:36:28+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000317s ]
+[2020-10-29T12:36:40+08:00][sql] CONNECT:[ UseTime:0.000616s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:36:40+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000622s ]
+[2020-10-29T12:36:40+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000272s ]
+[2020-10-29T12:36:40+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000245s ]
+[2020-10-29T12:37:13+08:00][sql] CONNECT:[ UseTime:0.000642s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:37:13+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000713s ]
+[2020-10-29T12:37:13+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000212s ]
+[2020-10-29T12:37:13+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000156s ]
+[2020-10-29T12:37:31+08:00][sql] CONNECT:[ UseTime:0.000668s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:37:31+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000800s ]
+[2020-10-29T12:37:31+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000266s ]
+[2020-10-29T12:37:31+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000211s ]
+[2020-10-29T12:37:47+08:00][sql] CONNECT:[ UseTime:0.000633s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:37:47+08:00][sql] SHOW FULL COLUMNS FROM `sj_organize` [ RunTime:0.000661s ]
+[2020-10-29T12:37:47+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_organize` WHERE  `status` >= 0 [ RunTime:0.000308s ]
+[2020-10-29T12:37:47+08:00][sql] SELECT `id`,`name`,`status`,`ctime`,`utime` FROM `sj_organize` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000452s ]
+[2020-10-29T12:37:48+08:00][sql] CONNECT:[ UseTime:0.000479s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:37:48+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000579s ]
+[2020-10-29T12:37:48+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000275s ]
+[2020-10-29T12:37:48+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000302s ]
+[2020-10-29T12:38:08+08:00][sql] CONNECT:[ UseTime:0.000600s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:38:08+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000754s ]
+[2020-10-29T12:38:08+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000343s ]
+[2020-10-29T12:38:08+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000334s ]
+[2020-10-29T12:38:36+08:00][sql] CONNECT:[ UseTime:0.000666s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:38:36+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000665s ]
+[2020-10-29T12:38:36+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000351s ]
+[2020-10-29T12:38:36+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000288s ]
+[2020-10-29T12:39:11+08:00][sql] CONNECT:[ UseTime:0.000660s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:39:11+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000745s ]
+[2020-10-29T12:39:11+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000316s ]
+[2020-10-29T12:39:11+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000293s ]
+[2020-10-29T12:39:23+08:00][sql] CONNECT:[ UseTime:0.000409s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:39:23+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000577s ]
+[2020-10-29T12:39:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000228s ]
+[2020-10-29T12:39:23+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000210s ]
+[2020-10-29T12:40:05+08:00][sql] CONNECT:[ UseTime:0.000635s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:40:05+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000717s ]
+[2020-10-29T12:40:05+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000323s ]
+[2020-10-29T12:40:05+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000305s ]
+[2020-10-29T12:40:27+08:00][sql] CONNECT:[ UseTime:0.000774s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:40:27+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000667s ]
+[2020-10-29T12:40:27+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000219s ]
+[2020-10-29T12:40:27+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000223s ]
+[2020-10-29T12:40:31+08:00][sql] CONNECT:[ UseTime:0.000519s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:40:31+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000483s ]
+[2020-10-29T12:40:31+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000183s ]
+[2020-10-29T12:40:31+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000182s ]
+[2020-10-29T12:40:35+08:00][sql] CONNECT:[ UseTime:0.000504s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:40:35+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000601s ]
+[2020-10-29T12:40:35+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000221s ]
+[2020-10-29T12:40:35+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000346s ]
+[2020-10-29T12:41:22+08:00][sql] CONNECT:[ UseTime:0.000647s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:41:22+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000632s ]
+[2020-10-29T12:41:22+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000223s ]
+[2020-10-29T12:41:22+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000249s ]
+[2020-10-29T12:41:54+08:00][sql] CONNECT:[ UseTime:0.000706s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:41:54+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000595s ]
+[2020-10-29T12:41:54+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000224s ]
+[2020-10-29T12:41:54+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000195s ]
+[2020-10-29T12:42:27+08:00][sql] CONNECT:[ UseTime:0.000712s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T12:42:27+08:00][sql] SHOW FULL COLUMNS FROM `sj_schedule` [ RunTime:0.000670s ]
+[2020-10-29T12:42:27+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_schedule` [ RunTime:0.000292s ]
+[2020-10-29T12:42:27+08:00][sql] SELECT `id`,`activity_id`,`utime`,`ctime` FROM `sj_schedule` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000272s ]
+[2020-10-29T13:01:50+08:00][sql] CONNECT:[ UseTime:0.000726s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:01:50+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000797s ]
+[2020-10-29T13:01:50+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000284s ]
+[2020-10-29T13:01:50+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000299s ]
+[2020-10-29T13:01:52+08:00][sql] CONNECT:[ UseTime:0.000656s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:01:52+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.000724s ]
+[2020-10-29T13:01:52+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_manager_login_log` WHERE  `manager_id` = 1 [ RunTime:0.000308s ]
+[2020-10-29T13:01:52+08:00][sql] SELECT `manager_id`,`ip`,`ctime` FROM `sj_manager_login_log` WHERE  `manager_id` = 1 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000275s ]
+[2020-10-29T13:02:07+08:00][sql] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:02:07+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000711s ]
+[2020-10-29T13:02:07+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000268s ]
+[2020-10-29T13:02:07+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000360s ]
+[2020-10-29T13:02:09+08:00][sql] CONNECT:[ UseTime:0.000574s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:02:09+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.000636s ]
+[2020-10-29T13:02:09+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_manager_login_log` WHERE  `manager_id` = 1 [ RunTime:0.000349s ]
+[2020-10-29T13:02:09+08:00][sql] SELECT `manager_id`,`ip`,`ctime` FROM `sj_manager_login_log` WHERE  `manager_id` = 1 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000323s ]
+[2020-10-29T13:02:51+08:00][sql] CONNECT:[ UseTime:0.000777s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:02:51+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.000586s ]
+[2020-10-29T13:02:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_manager_login_log` WHERE  `manager_id` = 1 [ RunTime:0.000324s ]
+[2020-10-29T13:02:51+08:00][sql] SELECT `manager_id`,`ip`,`ctime` FROM `sj_manager_login_log` WHERE  `manager_id` = 1 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000286s ]
+[2020-10-29T13:03:02+08:00][sql] CONNECT:[ UseTime:0.000536s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:03:02+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.000792s ]
+[2020-10-29T13:03:02+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_manager_login_log` WHERE  `manager_id` = 1 [ RunTime:0.000376s ]
+[2020-10-29T13:03:02+08:00][sql] SELECT `manager_id`,`ip`,`ctime` FROM `sj_manager_login_log` WHERE  `manager_id` = 1 ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000308s ]
+[2020-10-29T13:03:27+08:00][sql] CONNECT:[ UseTime:0.000633s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:03:27+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000872s ]
+[2020-10-29T13:03:27+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000354s ]
+[2020-10-29T13:03:27+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000332s ]
+[2020-10-29T13:06:08+08:00][sql] CONNECT:[ UseTime:0.000677s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:06:08+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.000617s ]
+[2020-10-29T13:06:08+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_role` [ RunTime:0.000376s ]
+[2020-10-29T13:06:08+08:00][sql] SELECT `id`,`name`,`status`,`ctime`,`utime` FROM `sj_role` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000265s ]
+[2020-10-29T13:06:09+08:00][sql] CONNECT:[ UseTime:0.000479s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:06:09+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.000547s ]
+[2020-10-29T13:06:09+08:00][sql] SELECT `id`,`name`,`power`,`status` FROM `sj_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000295s ]
+[2020-10-29T13:06:17+08:00][sql] CONNECT:[ UseTime:0.000456s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:06:17+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.000581s ]
+[2020-10-29T13:06:17+08:00][sql] UPDATE `sj_role`  SET `name` = '超级管理员' , `power` = 'aw1,a1w1,a1w2,a1w3,a1w4,a2w1,a2w2,a2w3,a2w4,a2w5,a3w1,a4w1,a4w2,a4w3,a4w4,a4w5,bw1,b1w1,b1w2,b1w3,b1w4,b1w5,b2w1,b2w2,b2w3,b2w4,b2w5,b3w1,b3w2,b3w3,b3w4,b3w5,b4w1,b4w2,b4w3,b4w4,b4w5,b5w1,b5w2,b5w3,b5w4,b5w5,b6w1,b6w2,b6w3,b6w4,b6w5,cw1,c1w1,c1w2,c1w3,c1w4,c1w5,c2w1,c2w2,c2w3,c2w4,c2w5,c3w1,c3w2,c3w3,c3w4,c3w5,dw1,d1w1,d1w2,d1w3,d1w4,d1w5,d2w1,d2w2,d2w3,d2w4,d3w1,d3w2,d3w3,d3w4,ew1,e1w1,e1w2,e1w3,e1w4,e1w5,e1w1,e1w2,e1w3,e1w4,e1w5,e3w1,e3w2,e3w3,e3w4,e3w5,fw1,f1w1,f1w2,f1w3,f1w4,gw1,g1w1,g1w2,g1w3,g1w4,g2w1,g2w2,g2w3,g2w4,g3w1,g3w2,g3w3,g3w4,g4w1,g4w2,g4w3,g4w4' , `status` = 1 , `utime` = 1603947977  WHERE  `id` = 1 [ RunTime:0.000804s ]
+[2020-10-29T13:06:17+08:00][sql] SELECT `id`,`name`,`status` FROM `sj_role` LIMIT 100 [ RunTime:0.000220s ]
+[2020-10-29T13:06:17+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_work_log` [ RunTime:0.000468s ]
+[2020-10-29T13:06:17+08:00][sql] INSERT INTO `sj_manager_work_log` SET `manager_id` = 1 , `column` = 'Role' , `work` = 'doe' , `content` = 'admin | Role | 更新 | 1 | 超级管理员' , `ctime` = 1603947977 [ RunTime:0.000868s ]
+[2020-10-29T13:06:18+08:00][sql] CONNECT:[ UseTime:0.001331s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:06:18+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.001206s ]
+[2020-10-29T13:06:18+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_role` [ RunTime:0.000406s ]
+[2020-10-29T13:06:18+08:00][sql] SELECT `id`,`name`,`status`,`ctime`,`utime` FROM `sj_role` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000439s ]
+[2020-10-29T13:06:22+08:00][sql] CONNECT:[ UseTime:0.000454s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:06:22+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager` [ RunTime:0.000419s ]
+[2020-10-29T13:06:22+08:00][sql] SELECT `id`,`role_id`,`password`,`status` FROM `sj_manager` WHERE  `name` = 'admin' LIMIT 1 [ RunTime:0.000194s ]
+[2020-10-29T13:06:22+08:00][sql] SHOW FULL COLUMNS FROM `sj_role` [ RunTime:0.000342s ]
+[2020-10-29T13:06:22+08:00][sql] SELECT `power`,`status` FROM `sj_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000341s ]
+[2020-10-29T13:06:22+08:00][sql] UPDATE `sj_manager`  SET `token` = 'b9f2fb58f9b7b2daadb8dc0823e78c5d' , `last_time` = 1603947982 , `last_ip` = 2130706433  WHERE  `id` = 1 [ RunTime:0.000589s ]
+[2020-10-29T13:06:22+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager_login_log` [ RunTime:0.000489s ]
+[2020-10-29T13:06:22+08:00][sql] INSERT INTO `sj_manager_login_log` SET `manager_id` = 1 , `ip` = 2130706433 , `ctime` = 1603947982 [ RunTime:0.000423s ]
+[2020-10-29T13:06:26+08:00][sql] CONNECT:[ UseTime:0.000487s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:06:26+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000713s ]
+[2020-10-29T13:06:26+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000337s ]
+[2020-10-29T13:06:26+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000290s ]
+[2020-10-29T13:09:50+08:00][sql] CONNECT:[ UseTime:0.000708s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:09:50+08:00][sql] SHOW FULL COLUMNS FROM `sj_user` [ RunTime:0.001553s ]
+[2020-10-29T13:09:50+08:00][sql] SELECT * FROM `sj_user` WHERE  `id` > 0 LIMIT 100 [ RunTime:0.002286s ]
+[2020-10-29T13:10:57+08:00][sql] CONNECT:[ UseTime:0.000823s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:10:57+08:00][sql] SHOW FULL COLUMNS FROM `sj_user` [ RunTime:0.000770s ]
+[2020-10-29T13:10:57+08:00][sql] SELECT * FROM `sj_user` WHERE  `id` > 0 LIMIT 100 [ RunTime:0.000419s ]
+[2020-10-29T13:13:04+08:00][sql] CONNECT:[ UseTime:0.000729s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:13:04+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000772s ]
+[2020-10-29T13:13:04+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000261s ]
+[2020-10-29T13:13:04+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000259s ]
+[2020-10-29T13:13:07+08:00][sql] CONNECT:[ UseTime:0.001422s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:13:07+08:00][sql] SHOW FULL COLUMNS FROM `sj_user` [ RunTime:0.000978s ]
+[2020-10-29T13:13:07+08:00][sql] SELECT * FROM `sj_user` WHERE  `id` > 0 LIMIT 100 [ RunTime:0.000620s ]
+[2020-10-29T13:13:57+08:00][sql] CONNECT:[ UseTime:0.000634s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:13:57+08:00][sql] SHOW FULL COLUMNS FROM `sj_activity` [ RunTime:0.000718s ]
+[2020-10-29T13:13:57+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_activity` WHERE  `status` >= 0 [ RunTime:0.000311s ]
+[2020-10-29T13:13:57+08:00][sql] SELECT `id`,`title`,`begin_time`,`address`,`end_time`,`join_begin`,`join_end`,`status`,`ctime`,`utime` FROM `sj_activity` WHERE  `status` >= 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000344s ]
+[2020-10-29T13:13:59+08:00][sql] CONNECT:[ UseTime:0.000488s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:13:59+08:00][sql] SHOW FULL COLUMNS FROM `sj_user` [ RunTime:0.000739s ]
+[2020-10-29T13:13:59+08:00][sql] SELECT * FROM `sj_user` WHERE  `id` > 0 LIMIT 100 [ RunTime:0.000423s ]
+[2020-10-29T13:15:01+08:00][sql] CONNECT:[ UseTime:0.000536s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:15:01+08:00][sql] SHOW FULL COLUMNS FROM `sj_user` [ RunTime:0.000617s ]
+[2020-10-29T13:15:01+08:00][sql] SELECT `id`,`username` FROM `sj_user` WHERE  `id` > 0 LIMIT 100 [ RunTime:0.000277s ]
+[2020-10-29T13:15:35+08:00][sql] CONNECT:[ UseTime:0.000749s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:15:35+08:00][sql] SHOW FULL COLUMNS FROM `sj_user` [ RunTime:0.000753s ]
+[2020-10-29T13:15:35+08:00][sql] SELECT `id`,`username` FROM `sj_user` WHERE  `id` > 0 LIMIT 100 [ RunTime:0.000273s ]
+[2020-10-29T13:17:16+08:00][sql] CONNECT:[ UseTime:0.000574s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:17:16+08:00][sql] SHOW FULL COLUMNS FROM `sj_user` [ RunTime:0.000588s ]
+[2020-10-29T13:17:16+08:00][sql] SELECT `id`,`username` FROM `sj_user` WHERE  `id` > 0 LIMIT 100 [ RunTime:0.001417s ]
+[2020-10-29T13:17:29+08:00][sql] CONNECT:[ UseTime:0.000635s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:17:29+08:00][sql] SHOW FULL COLUMNS FROM `sj_user` [ RunTime:0.000655s ]
+[2020-10-29T13:17:29+08:00][sql] SELECT `id`,`username` FROM `sj_user` WHERE  `id` > 0 LIMIT 100 [ RunTime:0.000329s ]
+[2020-10-29T13:18:23+08:00][sql] CONNECT:[ UseTime:0.000761s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:18:23+08:00][sql] SHOW FULL COLUMNS FROM `sj_user` [ RunTime:0.000721s ]
+[2020-10-29T13:18:23+08:00][sql] SELECT `id`,`username` FROM `sj_user` WHERE  `id` > 0 LIMIT 100 [ RunTime:0.000268s ]
+[2020-10-29T13:18:57+08:00][sql] CONNECT:[ UseTime:0.000414s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:18:57+08:00][sql] SHOW FULL COLUMNS FROM `sj_user` [ RunTime:0.000506s ]
+[2020-10-29T13:18:57+08:00][sql] SELECT `id`,`username` FROM `sj_user` WHERE  `id` > 0 LIMIT 100 [ RunTime:0.000209s ]
+[2020-10-29T13:19:04+08:00][sql] CONNECT:[ UseTime:0.001242s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-10-29T13:19:04+08:00][sql] SHOW FULL COLUMNS FROM `sj_user` [ RunTime:0.000869s ]
+[2020-10-29T13:19:04+08:00][sql] SELECT `id`,`username` FROM `sj_user` WHERE  `id` > 0 LIMIT 100 [ RunTime:0.000383s ]

@@ -1,0 +1,15 @@
+[2020-11-11T16:49:12+08:00][sql] CONNECT:[ UseTime:0.001400s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-11-11T16:49:12+08:00][sql] SHOW FULL COLUMNS FROM `sj_manager` [ RunTime:0.002984s ]
+[2020-11-11T16:49:12+08:00][sql] SELECT `id`,`status` FROM `sj_manager` WHERE  `token` = 'bf2813c480ad5b3089a9b10191d876d6' LIMIT 1 [ RunTime:0.000735s ]
+[2020-11-11T16:49:16+08:00][sql] CONNECT:[ UseTime:0.000946s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-11-11T16:49:16+08:00][sql] SHOW FULL COLUMNS FROM `sj_article` [ RunTime:0.001574s ]
+[2020-11-11T16:49:16+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_article` [ RunTime:0.000894s ]
+[2020-11-11T16:49:16+08:00][sql] SELECT `id`,`title`,`type`,`status`,`ctime`,`utime` FROM `sj_article` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000757s ]
+[2020-11-11T16:49:17+08:00][sql] CONNECT:[ UseTime:0.000345s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-11-11T16:49:17+08:00][sql] SHOW FULL COLUMNS FROM `sj_article_type` [ RunTime:0.002092s ]
+[2020-11-11T16:49:17+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_article_type` [ RunTime:0.000265s ]
+[2020-11-11T16:49:17+08:00][sql] SELECT `id`,`title`,`status`,`ctime`,`utime` FROM `sj_article_type` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000747s ]
+[2020-11-11T16:49:19+08:00][sql] CONNECT:[ UseTime:0.001982s ] mysql:host=127.0.0.1;port=3306;dbname=shejiao;charset=utf8mb4
+[2020-11-11T16:49:19+08:00][sql] SHOW FULL COLUMNS FROM `sj_article` [ RunTime:0.001848s ]
+[2020-11-11T16:49:19+08:00][sql] SELECT COUNT(*) AS think_count FROM `sj_article` [ RunTime:0.000644s ]
+[2020-11-11T16:49:19+08:00][sql] SELECT `id`,`title`,`type`,`status`,`ctime`,`utime` FROM `sj_article` ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000868s ]
